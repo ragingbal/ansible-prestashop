@@ -1,7 +1,7 @@
 ---
 - name: configure | make sure php dependencies are installed/up-to-date
   sudo: yes
-  apt: pkg={{ item }}
+  apt: pkg={{item}}
   with_items:
     - php5-mcrypt
     - php5-mysql
@@ -12,13 +12,24 @@
 - name: configure | enable mcrypt module
   command: "php5enmod mcrypt"
 
-- name: configure | get module
+- name: configure | get release
   get_url:
     url: "http://www.prestashop.com/download/prestashop_{{ prestashop_version }}.zip"
     dest: /var/www/prestashop.zip
 
-- name: configure | unzip
-  command: "unzip /var/www/prestashop.zip" 
+- name: configure | unzip release
+  command: "unzip prestashop.zip"
+  args:
+    chdir: /var/www
+    creates: prestashop
+
+- name: configure | remove release zip and install html
+  file:
+    name: "/var/www/{{item}}"
+    state: absent
+  with_items:
+    - Install_PrestaShop.html
+    - prestashop.zip
 
 - name: configure | set permissions
   file:
