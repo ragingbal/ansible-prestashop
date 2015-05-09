@@ -1,0 +1,15 @@
+---
+- name: mySQL | make sure the prestashop users are present
+  mysql_user:
+    name: "{{prestashop.mysql_db.user}}"
+    password: "{{prestashop.mysql_db.pass}}"
+    priv: "{{prestashop.mysql_db.priv | default('*.*:ALL')}}"
+    host: "{{prestashop.mysql_db.host | default('localhost')}}"
+    state: present
+
+- name: mySQL | make sure the prestashop databases are present
+  mysql_db:
+    name: "{{ prestashop.mysql_db.name }}"
+    collation: "{{ prestashop.mysql_db.collation | default('utf8_general_ci') }}"
+    encoding: "{{ prestashop.mysql_db.encoding | default('utf8') }}"
+    state: present

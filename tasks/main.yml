@@ -1,0 +1,10 @@
+---
+- include: mysql.yml
+  tags: [prestashop, prestashop-mysql]
+
+- include: configure.yml
+  tags: [prestashop, prestashop-configure]
+
+- include: nginx.yml
+  when: prestashop.nginx_site is defined
+  tags: [prestashop, prestashop-nginx]

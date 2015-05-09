@@ -1,0 +1,13 @@
+---
+- name: nginx | site
+  template:
+    src: nginx.site.j2
+    dest: "{{nginx_dir}}/sites-available/prestashop"
+
+- name: nginx | site enabled
+  file:
+    path: "{{nginx_dir}}/sites-enabled/prestashop"
+    src: "{{nginx_dir}}/sites-available/prestashop"
+    state: link
+  notify:
+    - restart nginx

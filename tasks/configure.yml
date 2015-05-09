@@ -1,0 +1,30 @@
+---
+- name: configure | make sure php dependencies are installed/up-to-date
+  sudo: yes
+  apt: pkg={{ item }}
+  with_items:
+    - php5-mcrypt
+    - php5-mysql
+    - php5-curl
+    - php5-gd
+    - unzip
+
+- name: configure | enable mcrypt module
+  command: "php5enmod mcrypt"
+
+- name: configure | get module
+  get_url:
+    url: "http://www.prestashop.com/download/prestashop_{{ prestashop_version }}.zip"
+    dest: /var/www/prestashop.zip
+
+- name: configure | unzip
+  command: "unzip /var/www/prestashop.zip" 
+
+- name: configure | set permissions
+  file:
+    path: /var/www
+    mode: 0777
+    recurse: yes
+    state: directory
+    owner: "www-data"
+    group: "www-data"

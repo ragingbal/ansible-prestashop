@@ -1,0 +1,15 @@
+galaxy_info:
+  author: calvin
+  company: Aplazame
+  description: Install packages required for magento ecommerce.
+  min_ansible_version: 1.4
+  license: MIT
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+  - magento
+  - ecommerce
+
+dependencies: []
