@@ -1,6 +1,4 @@
 server {
-  fastcgi_read_timeout 180s;
-
   listen {{ prestashop.nginx_site.port|default(80) }};
   server_name {{ prestashop.nginx_site.server_name }};
 
@@ -40,6 +38,7 @@ server {
     include {{nginx_dir}}/fastcgi_params;
     fastcgi_index index.php;
     fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    fastcgi_read_timeout 180s;
 
     if (-e $request_filename) { # check if requested path exists
       fastcgi_pass {{ prestashop.nginx_site.fastcgi_pass|default("127.0.0.1:8000")}};

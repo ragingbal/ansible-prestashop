@@ -1,7 +1,7 @@
 galaxy_info:
   author: calvin
   company: Aplazame
-  description: Install packages required for magento ecommerce.
+  description: Install packages required for prestashop ecommerce.
   min_ansible_version: 1.4
   license: MIT
   platforms:
@@ -9,7 +9,7 @@ galaxy_info:
     versions:
     - all
   categories:
-  - magento
+  - prestashop
   - ecommerce
 
 dependencies: []
