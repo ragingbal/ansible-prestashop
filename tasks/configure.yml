@@ -14,7 +14,7 @@
 
 - name: configure | get release
   get_url:
-    url: "http://www.prestashop.com/download/prestashop_{{ prestashop_version }}.zip"
+    url: "https://www.prestashop.com/ajax/controller.php?method=download&type=releases&file=prestashop_{{ prestashop_version }}.zip&language=en"
     dest: /var/www/prestashop.zip
 
 - name: configure | unzip release
