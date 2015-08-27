@@ -30,8 +30,20 @@ prestashop_version: 1.6.1.1
 nginx_dir: /etc/nginx
 ```
 
-## Help
+#### Aplazame module
+
+Using Aplazame on your online store is easy with Magento!
+
+[https://github.com/aplazame/prestashop](https://github.com/aplazame/prestashop)
+
+#### Live demo
+
+This is the online demo for uses to test Aplazame and its features. 
+
+[http://prestashop.aplazame.com](http://prestashop.aplazame.com)
+
+#### Help
 
 **Have a question about Aplazame?**
 
-Aplazame support team can help you get the answers you need about this plugin by email soporte@aplazame.com.
+For any support request please drop us an email at email soporte@aplazame.com.
