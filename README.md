@@ -3,7 +3,7 @@ Ansible role which installs and configures Prestashop
 
 **Latest Prestashop version**
 
-Prestashop 1.6.1
+Prestashop 1.6.1.1
 
 #### Dependencies
 
