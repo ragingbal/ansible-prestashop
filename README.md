@@ -32,7 +32,7 @@ nginx_dir: /etc/nginx
 
 #### Aplazame module
 
-Using Aplazame on your online store is easy with Magento!
+Using Aplazame on your online store is easy with Prestashop!
 
 [https://github.com/aplazame/prestashop](https://github.com/aplazame/prestashop)
 
