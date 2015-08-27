@@ -1,7 +1,7 @@
 [ ![Image](https://aplazame.com/static/img/banners/banner-728-white.png "Aplazame") ](https://aplazame.com "Aplazame")
-Ansible role which installs and configures Magento
+Ansible role which installs and configures Prestashop
 
-**Latest Magento version**
+**Latest Prestashop version**
 
 Prestashop 1.6.1
 
