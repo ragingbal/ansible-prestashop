@@ -1,4 +1,4 @@
-[ ![Image](https://aplazame.com/static/img/banners/banner-728-white.png "Aplazame") ](https://aplazame.com "Aplazame")
+[ ![Image](https://aplazame.com/static/img/banners/banner-728-white-ansible.png "Aplazame") ](https://aplazame.com "Aplazame")
 Ansible role which installs and configures Prestashop
 
 **Latest Prestashop version**
