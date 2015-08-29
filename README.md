@@ -30,9 +30,9 @@ prestashop_version: 1.6.1.1
 nginx_dir: /etc/nginx
 ```
 
-#### Aplazame module
+#### Aplazame Module
 
-Using Aplazame on your online store is easy with Prestashop!
+Start taking online payments through Aplazame's Payment Module!!
 
 [https://github.com/aplazame/prestashop](https://github.com/aplazame/prestashop)
 
