@@ -1,5 +1,5 @@
 [ ![Image](https://aplazame.com/static/img/banners/banner-728-white-ans.png "Aplazame") ](https://aplazame.com "Aplazame")
-Ansible role which installs and configures Prestashop
+[Ansible](http://www.ansible.com/home) playbooks for deploying Prestashop
 
 **Latest Prestashop version**
 
