@@ -46,4 +46,4 @@ This is the online demo for uses to test Aplazame and its features.
 
 **Have a question about Aplazame?**
 
-For any support request please drop us an email at [soporte@aplazame.com](mailto:soporte@aplazame.com?subject=Help me with the ansible).
+For any support request please drop us an email at [soporte.prestashop@aplazame.com](mailto:soporte.prestashop@aplazame.com?subject=Help me with the ansible).
