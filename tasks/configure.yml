@@ -7,29 +7,18 @@
     - php5-mysql
     - php5-curl
     - php5-gd
-    - unzip
 
 - name: configure | enable mcrypt module
   command: "php5enmod mcrypt"
 
 - name: configure | get release
-  get_url:
-    url: "https://www.prestashop.com/ajax/controller.php?method=download&type=releases&file=prestashop_{{ prestashop_version }}.zip&language=en"
-    dest: /var/www/prestashop.zip
-
-- name: configure | unzip release
-  command: "unzip prestashop.zip"
-  args:
-    chdir: /var/www
-    creates: prestashop
-
-- name: configure | remove release zip and install html
-  file:
-    name: "/var/www/{{item}}"
-    state: absent
-  with_items:
-    - Install_PrestaShop.html
-    - prestashop.zip
+  unarchive:
+    src: "https://www.prestashop.com/ajax/controller.php?method=download&type=releases&file=prestashop_{{ prestashop_version }}.zip&language=en"
+    dest: /var/www
+    copy: no
+    owner: www-data
+    group: www-data
+    creates: /var/www/prestashop
 
 - name: configure | set permissions
   file:
