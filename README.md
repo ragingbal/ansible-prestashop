@@ -3,7 +3,7 @@
 
 **Latest Prestashop version**
 
-Prestashop 1.6.1.1
+Prestashop 1.6.1.3
 
 #### Dependencies
 
@@ -26,7 +26,7 @@ prestashop:
 #### Default variables
 
 ```yaml
-prestashop_version: 1.6.1.1
+prestashop_version: 1.6.1.3
 nginx_dir: /etc/nginx
 ```
 
